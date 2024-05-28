@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- nav-bar -->
+    <header>
+        <div class="rope"></div>
+        <div class="header-div">      
+          
+            <div class="logo-name-div">  <div data-aos="fade-down">
+        <img src="graduation-hat.png" class="logo-img" alt="logo" ></div>
+        <div class="main-name">
+            <h3>NK</h3>
+            <p>School</p>
+        </div>
+    </div>
+        <ul class="header-menu">
+           
+            <li> <div data-aos="fade-up"><a href="index.html" class="b home-btn">Home</div></a></li>
+            <!-- <li> <div data-aos="fade-up"><a href="/" class="b">Services</div></a></li> -->
+            <li> <div data-aos="fade-up"><a href="faculty.html" class="b">Faculty</div></a></li>
+            <li> <div data-aos="fade-up"><a href="search_student.html" class="b">Students</div></a></li>
+            <li> <div data-aos="fade-up"><a href="about.html" class="b">About</div></a></li>
+           
+    
+        </ul>
+        
+        </div>
+    </header>
+    <!-- main -->
+    <div class="main">
+        <div class="hero-section">
+            <div class="hero-section-content">
+                <div class="hero-section-text">
+      
+                    <p>Empower Lifelong Learning<p>
+                        <h2>Unlock Your True Potential with NK School</h2>
+                        <p>NK School was established in June 2010. It is a Class 11 and 12,
+                             co-educational, English & Gujarati medium school affiliated with the Gujarat Board.</p>
+                             <div class="hero-btn-div">
+                             <a  href="enroll.html"class="btn enroll" >Enroll Now</a>
+                             <!-- <a href="search.html"class="btn">Student Info</a>  -->
+                            </div>
+                        </div>
+
+                <figure>
+        
+                    <img src="school.png" class="main-img" alt="school img" height="10rem">
+                </figure>
+    
+
+            </div>
+            
+        </div>
+    </div>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container-main">
+                <div class="media-links">
+            
+<div data-aos="fade-up"
+     data-aos-duration="400">
+
+                <h2 class="heading">NK School</h2>
+                <p class="writing">Let's revolutionize the way you study with NK School</p>
+            </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/nishantpatel_29?utm_source=qr&igsh=am80MW13MW1rZXgz" class="media"><div data-aos="flip-left"><i class="fa-brands fa-instagram"></i></div></a>
+                    <a href="twitter" class="media"><div data-aos="flip-left"><i class="fa-brands fa-x-twitter"></i></div></a>
+                    <a href="discord" class="media"><div data-aos="flip-left"><i class="fa-brands fa-discord"></i></div></a>
+                </div>
+                <h6 class="copyright">  &#xa9 Copyright reserved by NK School</h6>
+                </div>
+             
+               
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            headerdiv=document.querySelector(".header-div");
+               rope=document.querySelector(".rope");
+            rope.addEventListener('click',()=>{
+                rope.style.transition="all 0.9s ease";
+                rope.style.top="3rem";
+                headerdiv.style.transition="all 0.5s ease-in-out";
+                headerdiv.style.top="0.1rem";
+                setTimeout(()=>{
+                    headerdiv.style.top="-3rem";
+                rope.style.top="0rem";
+                },100000);
+            })
+          
+        </script>
+        <script>
+AOS.init();
+        </script>
+      
+</body>
+</html>

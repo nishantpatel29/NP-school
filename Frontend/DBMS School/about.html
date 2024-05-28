@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- nav-bar -->
+    <header>
+        <!-- <div class="rope"></div> -->
+        <div class="header-div">      
+            <div class="logo-name-div">
+        <img src="graduation-hat.png" class="logo-img" alt="logo" >
+        <div class="main-name">
+            <h3>NK</h3>
+            <p>School</p>
+        </div>
+    </div>
+        <ul class="header-menu">
+        
+            <li> <a href="index.html" class="b ">Home</a></li>
+            <!-- <li> <a href="/" class="b">Services</a></li> -->
+            <!-- <li> <a href="/" class="b">Contact</a></li> -->
+            <li> <a href="faculty.html" class="b">Faculty</a></li>
+            <li> <a href="search_student.html" class="b">Students</a></li>
+            <li> <a href="about.html" class="b home-btn">About</a></li>
+           
+    
+        </ul>
+        
+        </div>
+    </header>  
+    <main class="about-main">
+       <div class="about-div-main">
+        <div class="about-1">
+        <div class="card-sub">
+            <img src="laboratory.png" alt="lab">
+            <h4>Chemistry</h4>
+            <p>
+                Unlock the wonders of the molecular world with our dynamic chemistry school! Dive into the realms of atoms,
+                 compounds, and reactions as you explore the fundamental principles that govern our universe.</p>
+        </div>
+        <div class="card-sub">
+            <img src="relativity.png" alt="lab">
+            <h4>Physics</h4>
+            <p>
+                Embark on a thrilling voyage through the cosmos with our premier physics school! Delve into the mysteries of matter,
+                energy, and the fundamental laws that shape the universe. Led by passionate instructors.</p>
+                
+            </p>
+        </div>
+        <div class="card-sub">
+            <img src="dna.png" alt="lab">
+            <h4>Biology</h4>
+            <p>
+Discover the wonders of life at our biology school. From cells to ecosystems, explore 
+the intricate web of living organisms and unlock the secrets of the natural world. </p>
+                
+            </p>
+        </div>
+    </div>
+    <div class="about-2">
+        <div class="card-sub">
+            <img src="sanskrit.png" alt="lab">
+            <h4>Sanskrit</h4>
+            <p>
+                
+Embark on a journey of mathematical discovery at our school. From algebra to calculus, unleash your potential and master the language of the universe.
+ Join us and redefine what's possible with the power of mathematics.</p>
+        </div>
+        <div class="card-sub">
+            <img src="computer.png" alt="lab">
+            <h4>Computer</h4>
+            <p>
+                
+Embark on a journey of mathematical discovery at our school. From algebra to calculus, unleash your potential and master the language of the universe.
+ Join us and redefine what's possible with the power of mathematics.</p>
+        </div>
+        <div class="card-sub">
+            <img src="calculator.png" alt="lab">
+            <h4>Maths</h4>
+            <p>
+                
+Embark on a journey of mathematical discovery at our school. From algebra to calculus, unleash your potential and master the language of the universe.
+ Join us and redefine what's possible with the power of mathematics.</p>
+        </div>
+    </div>
+       </div>
+    </main>
+          <!-- footer -->
+          <footer class="footer">
+            <div class="container-main">
+                <div class="media-links">
+            
+<div data-aos="fade-up"
+     data-aos-duration="400">
+
+                <h2 class="heading">NK School</h2>
+                <p class="writing">Let's revolutionize the way you study with NK School</p>
+            </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/nishantpatel_29?utm_source=qr&igsh=am80MW13MW1rZXgz" class="media"><div data-aos="flip-left"><i class="fa-brands fa-instagram"></i></div></a>
+                    <a href="twitter" class="media"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="discord" class="media"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <h6 class="copyright">  &#xa9 Copyright reserved by NK School</h6>
+                </div>
+             
+               
+            </div>
+        </footer>
+    <script>
+        // rope
+        headerdiv=document.querySelector(".header-div");
+           rope=document.querySelector(".rope");
+        headerdiv.style.top="0rem";
+        rope.addEventListener('click',()=>{
+                rope.style.transition="all 0.9s ease";
+                rope.style.top="3rem";
+                headerdiv.style.transition="all 0.5s ease-in-out";
+                headerdiv.style.top="0.1rem";
+                setTimeout(()=>{
+                    headerdiv.style.top="-3rem";
+                rope.style.top="0rem";
+                },100000);
+            })
+    </script>
+</body>
+</html>

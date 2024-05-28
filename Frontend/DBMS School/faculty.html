@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faculty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <!-- nav-bar -->
+    <header>
+        <!-- <div class="rope"></div> -->
+        <div class="header-div">
+
+            <div class="logo-name-div">
+                <img src="graduation-hat.png" class="logo-img" alt="logo">
+                <div class="main-name">
+                    <h3>NK</h3>
+                    <p>School</p>
+                </div>
+            </div>
+            <ul class="header-menu">
+
+                <li> <a href="index.html" class="b ">Home</a></li>
+                <!-- <li> <a href="/" class="b">Services</a></li> -->
+                <!-- <li> <a href="/" class="b">Contact</a></li> -->
+                <li> <a href="faculty.html" class="b home-btn">Faculty</a></li>
+                <li> <a href="search_student.html" class="b">Students</a></li>
+                <li> <a href="/about.html" class="b">About</a></li>
+
+
+            </ul>
+
+        </div>
+    </header>
+    <!-- main -->
+    <div class="main">
+        <div class="hero-section">
+            <div class="hero-section-content">
+                <div class="hero-section-text">
+
+
+                    <h2>
+                        About the Faculty
+                    </h2>
+                    <p>At our school, our teachers are more than just educators; they are mentors, motivators,
+                        and guides on the journey of learning. With their unwavering commitment and passion
+                        for teaching, they inspire curiosity, ignite creativity, and nurture the potential within
+                        each student. Our teachers go above and beyond to create engaging learning environments,
+                        fostering not just academic excellence but also personal growth and character development. </p>
+                </div>
+
+                <figure>
+
+                    <img src="teacher.png" class="main-img faculty" alt="school img">
+                </figure>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="frame">
+        <div class="faculty-card">
+            <img src="1.jpg" alt="">
+            <div class="info-teacher">
+                <div class="name">
+                    <H3>Jagdish Patel<H3>
+                            <p>(B.tech,M.tech)</p>
+                </div>
+                <div class="position">
+                    <h4> Principal </h4>
+                    <p>(Gujarati Medium)</p>
+                </div>
+            </div>
+        </div>
+        <div class="faculty-card">
+            <img src="2.jpg" alt="">
+            <div class="info-teacher">
+                <div class="name">
+                    <H3>Navin Vyas<H3>
+                            <p>(B.tech)</p>
+                </div>
+                <div class="position">
+                    <h4>Vice Principal </h4>
+                    <p>(Gujarati Medium)</p>
+                </div>
+            </div>
+        </div>
+        <div class="faculty-card">
+            <img src="3.jpg" alt="">
+            <div class="info-teacher">
+                <div class="name">
+                    <H3>Nitin Agrawal<H3>
+                            <p>(B.tech,M.tech)</p>
+                </div>
+                <div class="position">
+                    <h4> Principal </h4>
+                    <p>(English Medium)</p>
+                </div>
+            </div>
+        </div>
+        <div class="faculty-card">
+            <img src="4.jpg" alt="">
+            <div class="info-teacher">
+                <div class="name">
+                    <H3>Sunita Chauhan<H3>
+                            <p>(B.tech)</p>
+                </div>
+                <div class="position">
+                    <h4>Vice Principal </h4>
+                    <p>(English Medium)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="search">
+        <h2 style="background-color: #030d1e; color: white;">Search Faculty</h2>
+       <div class="search-faculty-div" id="nishant">
+            <textarea name="" class="by search-faculty-div" id="f_name" cols="30" rows="2" placeholder="Search by name"></textarea>
+           <li class="or">or</li>
+           <textarea name="" class="by search-faculty-div" id="f_sub" cols="30" rows="2" placeholder="Search by subject"></textarea>
+           <li class="or">or</li>
+            <textarea name="" class="by search-faculty-div" id="f_exp" cols="30" rows="2" placeholder="Search by exp"></textarea>
+        </div>
+        <div class="fac-btn">
+        <button class="search-btn" id="searchButton" onclick="click1()"> search</button>
+        <button class="search-btn" id="searchButtonM" onclick="exp()"> Most experienced</button>
+    </div>
+        <div class="display_faculty" id="res">hi</div>
+
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-main">
+            <div class="media-links">
+                <h2 class="heading">NK School</h2>
+                <p class="writing">Let's revolutionize the way you study with NK School</p>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/nishantpatel_29?utm_source=qr&igsh=am80MW13MW1rZXgz"
+                        class="media"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="twitter" class="media"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="discord" class="media"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <h6 class="copyright"> &#xa9 Copyright reserved by NK School</h6>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+     <!-- rope -->
+    <script>
+        headerdiv = document.querySelector(".header-div");
+        headerdiv.style.top = "0rem";
+    </script>
+         <!-- search -->
+         <script>
+            // search
+            btnDiv=document.querySelector(".fac-btn");
+            by=document .querySelectorAll(".by");
+            document.querySelectorAll("li");
+            searchdivfaculty=document.querySelector(".search-faculty-div");
+            searchdivfaculty.addEventListener('click',(e)=>{
+            e.target.style.width="30rem";
+            e.target.style.transition="all 0.5s linear";
+            
+            
+            
+            // Get a reference to the parent element of the elements you want to filter
+            const parentElement = document.getElementById('parentElementId');
+            
+            // Get all child elements of the parent element
+            const childElements =searchdivfaculty.children;
+            
+            // Convert childElements to an array for easier manipulation
+            const childElementsArray = Array.from(childElements);
+            
+            // Filter out the event.target from the array of child elements
+            const elementsToRemove = childElementsArray.filter(element => element !== event.target);
+            
+            // Remove each element from the DOM
+            elementsToRemove.forEach(element => {
+                element.parentNode.removeChild(element);
+            });
+            document.querySelector(".display_faculty").transition = "all 1s ease-in 1s";
+        })
+        btnDiv.addEventListener('click',()=>{
+            document.querySelector(".display_faculty").style.backgroundColor="#030d1e";
+            document.querySelector(".display_faculty").style.boxShadow = "0px 7px 29px 0px rgba(100, 100, 200, 0.4)";
+            });
+            </script>
+<!-- backcend -->
+<script src="../script.js"></script>
+<script >
+ nishant=document.querySelector("#nishant")
+            f_name=document.querySelector("#f_name");
+            f_sub=document.querySelector("#f_sub");
+            f_exp=document.querySelector("#f_exp");
+      
+            let n=1;
+            nishant.addEventListener('click',(e)=>{
+                if(e.target.id==f_name.id){
+                    n=1;
+                }
+                else if(e.target.id==f_sub.id){
+                    n=2;
+                }
+                else if(e.target.id==f_exp.id){
+                    n=3;
+                }
+              
+                
+                
+            });
+            click1=()=>{
+                if(n==1){
+                    search1();
+                }
+                else if(n==2){
+                    console.log("hh");
+                    search2();
+                }
+                else if(n==3){
+                    search3();
+                }            
+            }
+    const search1 = ()=>{
+    let div = document.getElementById('res');
+    val = $('#f_name')[0].value;
+    $.post('../faculty_by_name.php',{name:val},(res,req)=>{
+        div.innerHTML = "<table><tr><th>No.</th><th>Name</th><th>Surname</th><th>Sub</th><th>Experience</th></tr></table><br>";
+        i=1;
+        res.forEach(e=>{
+            div.innerHTML+="<br><table><tr><td>"+i+"</td><td>"+e.Firstname+"</td><td>"+e.Surname+"</td><td>"+e.Subject+"</td><td>"+e.Experience+" years+</td>"+"</tr></table>";
+            i=i+1;
+        })
+        
+    })
+    
+}
+    const search2 = ()=>{
+    let div = document.getElementById('res');
+    val = $('#f_sub')[0].value;
+    $.post('../faculty_by_sub.php',{name:val},(res,req)=>{
+        div.innerHTML = "<table><tr><th>No.</th><th>Name</th><th>Surname</th><th>Sub</th><th>Experience</th></tr></table><br>";
+        i=1;
+        res.forEach(e=>{
+            div.innerHTML+="<br><table><tr><td>"+i+"</td><td>"+e.Firstname+"</td><td>"+e.Surname+"</td><td>"+e.Subject+"</td><td>"+e.Experience+" years+</td>"+"</tr></table>";
+            i=i+1;
+        })
+        
+    })
+    
+}
+    const search3 = ()=>{
+    let div = document.getElementById('res');
+    val = $('#f_exp')[0].value;
+    $.post('../faculty_by_exp.php',{name:val},(res,req)=>{
+        div.innerHTML = "<table><tr><th>No.</th><th>Name</th><th>Surname</th><th>Sub</th><th>Experience</th></tr></table><br>";
+        i=1;
+        res.forEach(e=>{
+            div.innerHTML+="<br><table><tr><td>"+i+"</td><td>"+e.Firstname+"</td><td>"+e.Surname+"</td><td>"+e.Subject+"</td><td>"+e.Experience+" years+</td>"+"</tr></table>";
+            i=i+1;
+        })
+        
+    })
+    
+}
+    const exp =()=>{
+    let div = document.getElementById('res');
+    // val = $('#f_name')[0].value;
+    $.post('../faculty_most_exp.php',(res,req)=>{
+        console.log(res);
+        div.innerHTML = "<table><tr><th>No.</th><th>Name</th><th>Surname</th><th>Sub</th><th>Experience</th></tr></table><br>";
+        i=1;
+        res.forEach(e=>{
+            div.innerHTML+="<br><table><tr><td>"+i+"</td><td>"+e.Firstname+"</td><td>"+e.Surname+"</td><td>"+e.Subject+"</td><td>"+e.Experience+" years+</td>"+"</tr></table>";
+            i=i+1;
+        })
+      
+        
+    })
+}
+</script>
+</body>
+
+</html>
